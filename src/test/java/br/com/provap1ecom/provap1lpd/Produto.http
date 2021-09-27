@@ -1,0 +1,62 @@
+POST http://localhost:8080/produto
+Content-Type: application/json
+
+{
+  "id": 2,
+  "nome": "botadois",
+  "descricao": "Bota numero 2",
+  "fotoUrl": "https://cf.shopee.com.br/file/09f1035c96d17ec1c87759dc0f77eb96",
+  "dataCadastro": "2021-07-18",
+  "valorUnitario": "199.00"
+}
+
+###
+
+GET http://localhost:8080/produto?nome=bota
+Accept: application/json
+
+###
+
+POST http://localhost:8080/produto
+Content-Type: application/json
+
+{
+  "id": 3,
+  "nome": "botatres",
+  "descricao": "Bota numero 3",
+  "fotoUrl": "https://cf.shopee.com.br/file/09f1035c96d17ec1c87759dc0f77eb96",
+  "dataCadastro": "2019-04-17",
+  "valorUnitario": "250.0"
+}
+
+###
+
+GET http://localhost:8080/produto?valorMinimo=200.0&valorMaximo=600.0
+Accept: application/json
+
+###
+
+POST http://localhost:8080/produto
+Content-Type: application/json
+
+{
+  "id": 4,
+  "nome": "botaquatro",
+  "descricao": "Bota numero 4",
+  "fotoUrl": "https://cf.shopee.com.br/file/09f1035c96d17ec1c87759dc0f77eb96",
+  "dataCadastro": "2021-09-20",
+  "valorUnitario": "420.0"
+}
+
+###
+
+GET http://localhost:8080/produto?nome=bota&valorMinimo=300.0&valorMaximo=400.0
+Accept: application/json
+
+###
+
+/// Visualizar dados do produto (Entidades Envolvidas: Produto, Categoria, PromocaoItem e Promocao)
+GET http://localhost:8080/produto/3
+Accept: application/json
+
+###

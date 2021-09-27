@@ -1,0 +1,22 @@
+GET http://localhost:8080/categoria/1
+Accept: application/json
+
+###
+
+
+GET http://localhost:8080/categoria/1/produto?nome=bota&valorMinimo=150.0&valorMaximo=400.0
+Accept: application/json
+
+###
+
+
+GET http://localhost:8080/categoria/1/produto?nome=bota
+Accept: application/json
+
+###
+
+
+GET http://localhost:8080/categoria/1/produto?valorMinimo=100.0&valorMaximo=600.0
+Accept: application/json
+
+###
