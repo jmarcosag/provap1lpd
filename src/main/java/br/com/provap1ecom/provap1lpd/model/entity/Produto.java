@@ -11,7 +11,7 @@ public class Produto {
     private String fotoUrl;
     private LocalDate dataCadastro;
     private LocalTime horaCadastro;
-    private LocalDate dataHoraUltimaAtualizacao;
+    private LocalDate dataUltimaAtualizacao;
     private Float valorUnitario;
     private List<Categoria> categoriaList;
     private List<PromocaoItem> PromocaoItemList;
@@ -65,12 +65,12 @@ public class Produto {
         this.horaCadastro = horaCadastro;
     }
 
-    public LocalDate getDataHoraUltimaAtualizacao() {
-        return dataHoraUltimaAtualizacao;
+    public LocalDate getDataUltimaAtualizacao() {
+        return dataUltimaAtualizacao;
     }
 
-    public void setDataHoraUltimaAtualizacao(LocalDate dataHoraUltimaAtualizacao) {
-        this.dataHoraUltimaAtualizacao = dataHoraUltimaAtualizacao;
+    public void setDataUltimaAtualizacao(LocalDate dataUltimaAtualizacao) {
+        this.dataUltimaAtualizacao = dataUltimaAtualizacao;
     }
 
     public Float getValorUnitario() {

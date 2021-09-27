@@ -4,7 +4,7 @@ CREATE TABLE produto(
                         descricao              VARCHAR(300) NOT NULL,
                         fotoUrl                VARCHAR(1000),
                         dataCadastro           DATE NOT NULL,
-                        dataUltimaAtualizacao  TIMESTAMP NOT NULL,
+                        dataUltimaAtualizacao  TIMESTAMP,
                         valorUnitario          FLOAT NOT NULL
 );
 
