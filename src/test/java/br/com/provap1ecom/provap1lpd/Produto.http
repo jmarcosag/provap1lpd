@@ -50,13 +50,13 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:8080/produto?nome=bota&valorMinimo=300.0&valorMaximo=400.0
+GET http://localhost:8080/produto?nome=bota&valorMinimo=300.0&valorMaximo=500.0
 Accept: application/json
 
 ###
 
 /// Visualizar dados do produto (Entidades Envolvidas: Produto, Categoria, PromocaoItem e Promocao)
-GET http://localhost:8080/produto/3
+GET http://localhost:8080/produto/1
 Accept: application/json
 
 ###
